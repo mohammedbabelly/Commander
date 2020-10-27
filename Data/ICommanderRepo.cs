@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace Commander.Data
 {
-    interface ICommanderRepo
+    public interface ICommanderRepo
     {
-        IEnumerable<Command> GetAppCommands();
+        bool saveChanges();
+        IEnumerable<Command> GetAllCommands();
         Command GetCommandById(int id);
+
+        void CreateCommad(Command command);
+
+        void UpdateCommand(Command command);
+
+        void DeleteCommand(Command command);
     }
 }

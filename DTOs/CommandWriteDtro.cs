@@ -4,12 +4,10 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Commander.Models
+namespace Commander.DTOs
 {
-    public class Command
+    public class CommandWriteDto
     {
-        [Key]
-        public int Id { get; set; }
         [Required]
         public string HowTo { get; set; }
         [Required]
