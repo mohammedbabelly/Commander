@@ -4,7 +4,6 @@ using AutoMapper;
 using Commander.Data;
 using Commander.DTOs;
 using Commander.Models;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Commander.Controllers

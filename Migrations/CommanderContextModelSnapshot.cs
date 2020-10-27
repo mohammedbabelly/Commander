@@ -40,6 +40,43 @@ namespace Commander.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Commands");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            HowTo = "howTo1",
+                            Line = "myLine1",
+                            Platform = "platform1"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            HowTo = "howTo2",
+                            Line = "myLine2",
+                            Platform = "platform2"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            HowTo = "howTo3",
+                            Line = "myLine3",
+                            Platform = "platform3"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            HowTo = "howTo4",
+                            Line = "myLine4",
+                            Platform = "platform4"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            HowTo = "howTo5",
+                            Line = "myLine5",
+                            Platform = "platform5"
+                        });
                 });
 #pragma warning restore 612, 618
         }
